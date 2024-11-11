@@ -1,0 +1,56 @@
+.contact {
+    background: linear-gradient(90deg, rgba(31,91,79,1) 5%, rgba(60,205,178,1) 38%, rgba(177,225,216,1) 93%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.contact-email {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.contact-email input, textarea {
+    border-radius: 80px;
+    border: 0.5px solid black;
+    padding: 10px 20px;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.contact button {
+    padding: 20px 30px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.705);
+    margin: 20px 0px;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: rgba(237, 237, 237, 0.705);
+}
+
+.contact-profiles {
+    gap: 40px;
+}
+
+.contact-profiles img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 10px 20px;
+}

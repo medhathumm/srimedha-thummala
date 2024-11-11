@@ -1,0 +1,23 @@
+.about-me {
+    /* outline: 1px solid black; */
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.aboutme-left {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.aboutme-left h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.aboutme-right {
+    width: 50%;
+    margin-right: 10%;
+    margin-left: 15%;
+}

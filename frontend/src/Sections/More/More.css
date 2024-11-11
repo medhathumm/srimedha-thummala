@@ -1,0 +1,63 @@
+.more {
+    width: 80%;
+    margin: 5% 10%;
+    background: linear-gradient(90deg, rgba(60,168,147,1) 5%, rgba(60,205,178,1) 54%, rgba(183,247,235,1) 93%);
+    padding: 30px;
+}
+
+.more h1 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.more-sections {
+    display: flex;
+    flex-direction: inline;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 30px;
+}
+
+.more-section {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 10px;
+}
+
+.more-section h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.more-section hr {
+    color: grey;
+    height: 1px;
+}
+
+.more-entry {
+    padding: 5px;
+    width: 100%;
+}
+
+.more-entry p {
+    margin-top: -5px;
+}
+
+.more-entry-checkmore {
+    display: flex;
+    flex-direction: inline;
+    justify-content: space-between;
+}
+
+.more-entry-checkmore h5 {
+    color: rgb(113, 113, 113);
+    margin-top: -10px;
+}
+
+.more-entry-checkmore h2 {
+    margin-right: 30px;
+    margin-top: -40px;
+    font-size: 30px;
+}

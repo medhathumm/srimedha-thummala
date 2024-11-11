@@ -1,0 +1,21 @@
+.testimonials {
+    display: flex;
+    flex-direction: inline;
+    justify-content: space-between;
+    gap: 20px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+
+.testimonials-entry {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-entry h6 {
+    margin-top: -17px;
+    color: grey;
+}
