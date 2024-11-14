@@ -21,3 +21,15 @@
     margin-right: 10%;
     margin-left: 15%;
 }
+
+.aboutme-resume-btn button {
+    padding: 10px; 
+    background-color: #b7f7eb;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px -2px black;
+}
+
+.aboutme-resume-btn button:hover {
+    background-color: #a6f0e3;
+}
