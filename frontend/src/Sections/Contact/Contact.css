@@ -21,6 +21,7 @@
 
 .contact-email input, textarea {
     border-radius: 80px;
+    width: 80%;
     border: 0.5px solid black;
     padding: 10px 20px;
     align-items: center;
@@ -29,11 +30,9 @@
 
 .contact button {
     padding: 20px 30px;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
     background: rgba(255, 255, 255, 0.705);
-    margin: 20px 0px;
+    margin-bottom: 10px;
     border: 0.5px solid black;
     border-radius: 20px;
     font-size: 16px;

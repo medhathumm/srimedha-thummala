@@ -10,16 +10,18 @@
     flex-direction: inline;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 45px;
     color: white;
     font-size: 30px;
-    padding-top: 20px;
+    height: fit-content;
 }
 
 .heronav-nav a {
+    display: inline-block; 
     color: white;
     text-decoration: none;
-    padding: 0px 40px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .heronav-nav a:hover {
@@ -49,7 +51,73 @@
 }
 
 .heronav-hero p {
-    /* //margin-top: 5%; */
     font-size: 25px;
     color: white;
+}
+
+.heronav-more {
+    position: relative;
+    display: inline-block;
+}
+
+.heronav-more-dropdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translateX(-50%); 
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    box-shadow: 1px 1px 3px 0px black;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.heronav-more:hover .heronav-more-dropdown {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    width: fit-content;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    gap: 0px;
+    font-size: 18px;
+    top: 10vh;
+    right: 0; 
+    padding: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heronav-more a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.heronav-more:hover > a,
+.heronav-more:focus-within > a {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.heronav-more-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    color: black;
+}
+
+.heronav-more-dropdown li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.heronav-more-dropdown li:hover {
+    color: grey;
 }
