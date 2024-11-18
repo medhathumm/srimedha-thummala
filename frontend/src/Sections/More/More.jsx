@@ -1,6 +1,17 @@
 import "./More.css";
+import { useState, useEffect } from "react";
+import ExpEntries from "../../Pages/Experiences/ExpEntries.js";
+import { Link } from "react-router-dom";
 
 const More = () => {
+
+    const [experience, setExperience] = useState([]);
+
+    useEffect(() => {
+        const recentExperience = ExpEntries.slice(0,4);
+        setExperience(recentExperience);
+    }, [ExpEntries])
+
     return (
         <section id="more" className="more">
             <h1>More</h1>
@@ -42,38 +53,17 @@ const More = () => {
 
                 <div className="more-section">
                     <h3>Experience</h3>
-                    <div className="more-entry">
-                        <hr/>
-                        <h4>Teaching Assistant</h4>
-                        <div className="more-entry-checkmore">
-                            <h5>September 2024 - Present</h5>
-                            <h2>&gt;</h2>
+                    {experience.map((item) => ( 
+                        <div className="more-entry">
+                            <hr/>
+                            <h4>{item.name}</h4>
+                            <div className="more-entry-checkmore">
+                                <h5>{item.timeframe}</h5>
+                                <Link to={`/experience/${item.id}`} style={{ textDecoration: 'none' }} onClick={window.scrollTo(0,0)}><h2>&gt;</h2></Link>
+                            </div>
+                            <p>{item.description}</p>
                         </div>
-                        <p>Lead presentations on core CSE concepts for 335 students in University
-                            of Washington's Paul G. Allen School of Computer Science & Engineering 
-                            CSE 190B Direct-Admit Seminar.</p>
-                    </div>
-                    <div className="more-entry">
-                        <hr/>
-                        <h4>Technology Intern</h4>
-                        <div className="more-entry-checkmore">
-                            <h5>June 2020 - June 2023</h5>
-                            <h2>&gt;</h2>
-                        </div>
-                        <p>Managed and reimaged 500+ student devices yearly and resolved over 15 
-                            monthly hardware support tickets to facilitate and enhance intradistrict 
-                            technology functionality.</p>
-                    </div>
-                    <div className="more-entry">
-                        <hr/>
-                        <h4>Instructor</h4>
-                        <div className="more-entry-checkmore">
-                            <h5>December 2018 - September 2023</h5>
-                            <h2>&gt;</h2>
-                        </div>
-                        <p>Guided groups of 20 - 30 students of varying age groups while developing 
-                            leadership and teamwork skills through 10+ years of martial arts training.</p>
-                    </div>
+                    ))}
                 </div>
 
                 <div className="more-section">
