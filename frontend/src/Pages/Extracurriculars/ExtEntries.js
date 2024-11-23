@@ -1,21 +1,21 @@
 const ExtEntries = [
     { 
         id: 1, 
-        name: "Personal Website", 
-        timeframe: "August 2024 - Present",
-        description: "Creating E-commerce website using MERN stack languages."
+        name: "Speaker Selection Team Member", 
+        timeframe: "October 2024 - Present",
+        description: "Interview and select speakers from 100+ applicants for yearly TEDxUofW conference."
     },
     { 
         id: 2, 
-        name: "YouExplore", 
-        timeframe: "March 2024",
-        description: "Co-developed Figma designs for a mobile app aimed at providing accessible leisure resources during University of Washington's CREATE Program Hackathon." 
+        name: "Online Networks Team Member", 
+        timeframe: "October 2024 - Present",
+        description: "Maintaining club website and manage social media with AWS and Git for Applied Analytics Club at UW (AACUW)." 
     },
     { 
         id: 3, 
-        name: "EP-histARy", 
-        timeframe: "February 2024",
-        description: "Secured first place in Revere XR Hackathon with team Quantum SparkX for an AR prototype that preserves a historic event using innovative AR storytelling." 
+        name: "Executive Board Programming Chair", 
+        timeframe: "November 2024 - Present",
+        description: "Organizing 3+ impactful fundraisers to raise $1,000+ to support CRY America’s initiatives as part of Child Rights & YOu at UW (CRYUW)." 
     },
 ];
 
