@@ -19,6 +19,7 @@ const HeroNav = () => {
         setDropdownVisible(false); 
     };
 
+
     return (
         <section id="/" className="heronav-container">
             <div className="heronav-nav">
@@ -45,7 +46,7 @@ const HeroNav = () => {
                 <h3>Welcome to my website portfolio!</h3>
                 <p>Excited that you are here!</p>
                 <p>Explore</p>
-                <img src={down_arrow} alt=""/>
+                <a href="#aboutme" style={{textDecoration: 'none'}}><img src={down_arrow} alt=""/></a>
             </div>
         </section>
     )

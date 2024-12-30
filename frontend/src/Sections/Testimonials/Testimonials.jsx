@@ -14,10 +14,15 @@ const Testimonials = () => {
             </div>
 
             <div className="testimonials-entry">
-                <p>"Testimonial"</p>
-                <h5> ~ <i>Name</i></h5>
-                <h6>Role</h6>
-                <h6><strong>Date</strong></h6>
+                <p>"Medha was a great staff contributor to the 2024 iteration
+                     of the seminar I run each fall for over 300 entering computer
+                     science and engineering freshmen at the University of Washington.
+                     This is a "how to thrive in college and computing" seminar that relies
+                     fundamentally on peers and role models like Medha to share advice and
+                     lead by example."</p>
+                <h5> ~ <i>Dan Grossman</i></h5>
+                <h6>Faculty at University of Washington</h6>
+                <h6><strong>December 2024</strong></h6>
             </div>
 
             <div className="testimonials-entry">
