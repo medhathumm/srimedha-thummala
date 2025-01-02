@@ -21,7 +21,6 @@
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
 }
 
 .heronav-nav a:hover {
@@ -37,22 +36,34 @@
     justify-content: center;
 }
 
-.heronav-hero h1 {
+.burst-text span {
+    display: inline-block;
+    animation: burst 0.1s ease-out forwards;
+    opacity: 0;
+}
+
+.heronav-hero-h1 {
     margin-top: 10%;
     font-size: 70px;
     color: white;
 }
 
-.heronav-hero h3 {
-    margin-top: -5px;
-    margin-bottom: 5%;
+.heronav-hero-h3 {
+    /* margin-top: -5px; */
+    margin: 5% 0%;
     font-size: 50px;
     color: white;
 }
 
-.heronav-hero p {
+.heronav-hero-p {
     font-size: 25px;
     color: white;
+    /* margin-bottom: 5% 0%; */
+}
+
+.heronav-hero-p2 {
+    color: white;
+    margin-top: 5%;
 }
 
 .heronav-more {
@@ -121,4 +132,25 @@
 .heronav-more-dropdown li:hover {
     color: grey;
 }
+
+@keyframes burst {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.3);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1; /* Ensure the final opacity is 1 */
+    }
+  }
+  
+  .burst-text span {
+    display: inline-block;
+    animation: burst 0.8s ease-out forwards; /* Persist final state */
+    opacity: 0; /* Initial state */
+  }
 

@@ -1,0 +1,35 @@
+.skills {
+    width: 80%;
+    align-items: center;
+    margin: auto 10%;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 35px;
+}
+
+.skills-categories {
+    display: flex;
+    flex-direction: inline;
+    gap: 10%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.skills-category {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: inline;
+    gap: 20px;
+    text-align: left;
+}
+
+.skills-item img {
+    width: 40px;
+    height: 40px;
+}

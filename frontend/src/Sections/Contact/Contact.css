@@ -17,10 +17,12 @@
     flex-direction: column;
     gap: 20px;
     width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-email input, textarea {
-    border-radius: 80px;
+    border-radius: 5px;
     width: 80%;
     border: 0.5px solid black;
     padding: 10px 20px;
@@ -29,14 +31,16 @@
 }
 
 .contact button {
-    padding: 20px 30px;
+    padding: 15px 25px;
     align-self: center;
-    background: rgba(255, 255, 255, 0.705);
+    background: rgba(255, 255, 255, 0);
     margin-bottom: 10px;
-    border: 0.5px solid black;
-    border-radius: 20px;
+    border: 4px solid white;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+    color: white;
+    font-weight: 700;
 }
 
 .contact button:hover {
@@ -50,6 +54,7 @@
 .contact-profiles img {
     height: 50px;
     width: 50px;
-    border-radius: 10px;
-    margin: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 10px;
 }

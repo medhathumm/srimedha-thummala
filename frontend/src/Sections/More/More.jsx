@@ -36,7 +36,7 @@ const More = () => {
                             <h4>{item.name}</h4>
                             <div className="more-entry-checkmore">
                                 <h5>{item.timeframe}</h5>
-                                <Link to={`/project/${item.id}`} style={{ textDecoration: 'none' }} onClick={window.scrollTo(0,0)}><h2>&gt;</h2></Link>
+                                <Link to={`/project/${item.id}`} style={{ textDecoration: 'none', color: 'inherit' }} onClick={window.scrollTo(0,0)}><h2>&gt;</h2></Link>
                             </div>
                             <p>{item.description}</p>
                         </div>
@@ -51,7 +51,7 @@ const More = () => {
                             <h4>{item.name}</h4>
                             <div className="more-entry-checkmore">
                                 <h5>{item.timeframe}</h5>
-                                <Link to={`/experience/${item.id}`} style={{ textDecoration: 'none' }} onClick={window.scrollTo(0,0)}><h2>&gt;</h2></Link>
+                                <Link to={`/experience/${item.id}`} style={{ textDecoration: 'none', color: 'inherit' }} onClick={window.scrollTo(0,0)}><h2>&gt;</h2></Link>
                             </div>
                             <p>{item.description}</p>
                         </div>
@@ -66,7 +66,7 @@ const More = () => {
                             <h4>{item.name}</h4>
                             <div className="more-entry-checkmore">
                                 <h5>{item.timeframe}</h5>
-                                <Link to={`/extracurricular/${item.id}`} style={{ textDecoration: 'none' }} onClick={window.scrollTo(0,0)}><h2>&gt;</h2></Link>
+                                <Link to={`/extracurricular/${item.id}`} style={{ textDecoration: 'none', color: 'inherit' }} onClick={window.scrollTo(0,0)}><h2>&gt;</h2></Link>
                             </div>
                             <p>{item.description}</p>
                         </div>

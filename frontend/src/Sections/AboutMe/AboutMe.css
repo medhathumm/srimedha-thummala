@@ -18,8 +18,16 @@
 
 .aboutme-right {
     width: 50%;
-    margin-right: 10%;
-    margin-left: 15%;
+    /* margin-right: 10%;
+    margin-left: 15%; */
+    margin-left: 5%;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme-right img {
+    border-radius: 20px;
 }
 
 .aboutme-resume-btn button {
