@@ -28,6 +28,8 @@
 
 .aboutme-right img {
     border-radius: 20px;
+    width: 60%;
+    height: auto;
 }
 
 .aboutme-resume-btn button {

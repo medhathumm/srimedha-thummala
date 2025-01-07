@@ -1,7 +1,8 @@
 import './HeroNav.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import down_arrow from "../Media/down-arrow.png";
 import { Link } from "react-router-dom";
+import profile_pic from "../Media/profilepic1.png";
 
 const HeroNav = () => {
 
@@ -59,15 +60,19 @@ const HeroNav = () => {
             </div>
 
             <div className="heronav-hero">
-                {/* <h1>Hello!</h1>
-                <h3>Welcome to my website portfolio!</h3>
-                <p>Excited that you are here!</p>
-                <p>Explore</p> */}
-                <BurstText className="heronav-hero-h1" text="Hello!" fontSize="4.5rem" />
-                <BurstText className="heronav-hero-h3" text="Welcome to my website portfolio!" fontSize="3rem" />
-                <BurstText className="heronav-hero-p" text="Excited that you are here!" fontSize="2rem" />
-                <BurstText className="heronav-hero-p2" text="Explore" fontSize="1.5rem" />
-                <a href="#aboutme" style={{textDecoration: 'none'}}><img src={down_arrow} alt=""/></a>
+                <img className="heronav-hero-left" src={profile_pic} alt=""/>
+                <div className="heronav-hero-right">
+                    <h1>Hello!</h1>
+                    <h3>Welcome to my website portfolio!</h3>
+                    <p>Excited that you are here!</p>
+                    <p>Explore</p>
+                    {/* <BurstText className="heronav-hero-h1" text="Hello!" fontSize="4.5rem" />
+                    <BurstText className="heronav-hero-h3" text="Welcome to my website portfolio!" fontSize="3rem" />
+                    <BurstText className="heronav-hero-p" text="Excited that you are here!" fontSize="2rem" />
+                    <BurstText className="heronav-hero-p2" text="Explore" fontSize="1.5rem" /> */}
+                    <a href="#aboutme" style={{textDecoration: 'none'}}><img src={down_arrow} alt=""/></a>
+                </div>
+                
             </div>
         </section>
     )

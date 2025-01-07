@@ -2,7 +2,6 @@
     background: linear-gradient(90deg, rgba(31,91,79,1) 5%, rgba(60,205,178,1) 38%, rgba(177,225,216,1) 93%);
     max-height: 100%;
     width: 100%;
-    padding-bottom: 30px;
 }
 
 .heronav-nav {
@@ -13,27 +12,53 @@
     gap: 45px;
     color: white;
     font-size: 30px;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 .heronav-nav a {
     display: inline-block; 
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    position: relative;
+    /* padding: -10px 0px; */
+    /* background: #000000; */
 }
 
-.heronav-nav a:hover {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.705);
+.heronav-nav a::after {
+    content: '';
+    color: #fff;
+    /* background-color: rgba(255, 255, 255, 0.705); */
+    background:rgba(247, 221, 221, 0.705);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 0.25s;
+}
+
+.heronav-nav a:hover::after {
+    width: 100%;
 }
 
 .heronav-hero {
-    margin-top: 40px;
+    gap: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    width: 100%;
+    justify-content: space-between; /* Adjust spacing between left and right */
+    align-items: stretch;
+    position: relative;
+}
+
+.heronav-hero-left {
+    /* width: 600px;
+    height: 900px;
+    bottom: 0; */
+    align-self: flex-end; /* Push the image to the bottom */
+    width: 600px;
+    height: auto;
 }
 
 .burst-text span {
@@ -42,36 +67,47 @@
     opacity: 0;
 }
 
-.heronav-hero-h1 {
-    margin-top: 10%;
-    font-size: 70px;
-    color: white;
+.heronav-hero-right {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
-.heronav-hero-h3 {
-    /* margin-top: -5px; */
-    margin: 5% 0%;
+.heronav-hero-right h1 {
     font-size: 50px;
     color: white;
 }
 
-.heronav-hero-p {
-    font-size: 25px;
+.heronav-hero-right h3 {
+    /* margin-top: -5px; */
+    margin: 5% 0%;
+    font-size: 30px;
+    color: white;
+}
+
+.heronav-hero-right p {
+    font-size: 15px;
     color: white;
     /* margin-bottom: 5% 0%; */
 }
 
-.heronav-hero-p2 {
+/* .heronav-hero-p2 {
     color: white;
     margin-top: 5%;
-}
+} */
 
 .heronav-more {
     position: relative;
     display: inline-block;
 }
 
-.heronav-more-dropdown {
+/* .heronav-more-dropdown {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,9 +119,9 @@
     box-shadow: 1px 1px 3px 0px black;
     text-align: center;
     transition: all 0.3s ease;
-}
+} */
 
-.heronav-more:hover .heronav-more-dropdown {
+.heronav-more-dropdown {
     display: flex;
     flex-direction: column;
     min-height: fit-content;
@@ -103,14 +139,14 @@
 
 .heronav-more a {
     display: inline-block;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
 }
 
-.heronav-more:hover > a,
+/* .heronav-more:hover > a,
 .heronav-more:focus-within > a {
     color: black;
     background-color: rgba(255, 255, 255, 0.705);
-}
+} */
 
 .heronav-more-dropdown li {
     display: flex;
@@ -127,10 +163,12 @@
     color: black;
     display: block;
     padding: 10px;
+    cursor: pointer;
 }
 
 .heronav-more-dropdown li:hover {
     color: grey;
+    cursor: pointer;
 }
 
 @keyframes burst {
