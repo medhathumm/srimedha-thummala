@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="footer">
             <hr/>
             <div className="footer-copyright">
-                <p>Copyright @ 2024 - All Rights Reserved.</p>
+                <p style={{fontSize: '15px'}}>Copyright @ 2024 - All Rights Reserved.</p>
             </div>
         </div>
     )

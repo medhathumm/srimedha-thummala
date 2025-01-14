@@ -2,7 +2,7 @@ import './HeroNav.css';
 import { useState, useEffect } from 'react';
 import down_arrow from "../Media/down-arrow.png";
 import { Link } from "react-router-dom";
-import profile_pic from "../Media/profilepic1.png";
+import profile_pic from "../Media/profilepic3.png";
 
 const HeroNav = () => {
 
@@ -40,37 +40,42 @@ const HeroNav = () => {
     return (
         <section id="/" className="heronav-container">
             <div className="heronav-nav">
-                <a href="/" style={{textDecoration: 'none'}}><p>Home</p></a>
-                <a href="#aboutme" style={{textDecoration: 'none'}}><p>About Me</p></a>
+                <a href="/" style={{textDecoration: 'none', fontWeight: 500, fontSize: '25px'}}>Home</a>
+                <a href="#aboutme" style={{textDecoration: 'none', fontWeight: 500, fontSize: '25px'}}>About Me</a>
                 <div className="heronav-more" onMouseEnter={handleMouseEnter} 
                     onMouseLeave={handleMouseLeave}>
-                     <a href="#more" style={{textDecoration: 'none'}}><p>More</p></a>
+                     <a href="#more" style={{textDecoration: 'none', fontWeight: 500, fontSize: '25px'}}>More</a>
                      { dropdownVisible ? (
                         <ul className="heronav-more-dropdown">
-                            <li><a href="#skills" style={{textDecoration: 'none'}}><p>Skills</p></a></li>
-                            <li><Link to='/projects' onClick={handleLinkClick}>Projects</Link></li>
+                            <li><a href="#skills" style={{textDecoration: 'none'}}>Skills</a></li>
                             <li><Link to='/experiences' onClick={handleLinkClick}>Experience</Link></li>
                             <li><Link to='/extracurriculars' onClick={handleLinkClick}>Extracurriculars</Link></li>
                             <li><Link to='/photogallery' onClick={handleLinkClick}>Photo Gallery</Link></li>
-                            <li><a href="#testimonials" style={{textDecoration: 'none'}}><p>Testimonials</p></a></li>
+                            <li><a href="#testimonials" style={{textDecoration: 'none'}}>Testimonials</a></li>
                         </ul>
                     ) : <></>}
                 </div>
-                <a href="#contact" style={{textDecoration: 'none'}}><p>Contact Me</p></a>
+                <a href="#contact" style={{textDecoration: 'none', fontWeight: 500, fontSize: '25px'}}>Contact Me</a>
             </div>
 
             <div className="heronav-hero">
-                <img className="heronav-hero-left" src={profile_pic} alt=""/>
+                <div className="heronav-hero-left">
+                    <img src={profile_pic} alt=""/>
+                </div>
                 <div className="heronav-hero-right">
-                    <h1>Hello!</h1>
-                    <h3>Welcome to my website portfolio!</h3>
-                    <p>Excited that you are here!</p>
-                    <p>Explore</p>
+                    <h4>Hi! I am</h4>
+                    <h1>Srimedha Thummala</h1>
+                    <h2>Aspiring Software Engineer & Program Manager</h2>
+                    <h6>Detail-oriented and passionate Computer Science student with skills in software engineering, generative AI, and design. 
+                        Seeking an entry-level software engineering role to apply my technical abilities on innovative and impactful projects.
+                    </h6>
+                    <h6>Excited that you are here!</h6>
+                    {/* <h6>Learn more about me and what skills I have to offer</h6> */}
                     {/* <BurstText className="heronav-hero-h1" text="Hello!" fontSize="4.5rem" />
                     <BurstText className="heronav-hero-h3" text="Welcome to my website portfolio!" fontSize="3rem" />
                     <BurstText className="heronav-hero-p" text="Excited that you are here!" fontSize="2rem" />
                     <BurstText className="heronav-hero-p2" text="Explore" fontSize="1.5rem" /> */}
-                    <a href="#aboutme" style={{textDecoration: 'none'}}><img src={down_arrow} alt=""/></a>
+                    {/* <a href="#aboutme" style={{textDecoration: 'none'}}><img src={down_arrow} alt=""/></a> */}
                 </div>
                 
             </div>

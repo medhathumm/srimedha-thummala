@@ -3,6 +3,8 @@
     display: flex;
     padding: 40px;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutme-left {
@@ -21,7 +23,6 @@
     /* margin-right: 10%;
     margin-left: 15%; */
     margin-left: 5%;
-    margin-top: 2%;
     align-items: center;
     justify-content: center;
 }
@@ -33,11 +34,11 @@
 }
 
 .aboutme-resume-btn button {
-    padding: 10px; 
     background-color: #b7f7eb;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 2px 2px 3px -2px black;
+    width: 100px;
 }
 
 .aboutme-resume-btn button:hover {
