@@ -44,7 +44,7 @@ const More = () => {
                 </div>
 
                 <div className="more-section">
-                    <h3>Experience</h3>
+                    <h3>Experiences</h3>
                     {experience.map((item) => ( 
                         <div className="more-entry">
                             <hr/>

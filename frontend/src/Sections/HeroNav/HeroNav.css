@@ -64,7 +64,7 @@
     align-self: end;
     bottom: 0;
     max-height: 90%;
-    padding-left: 200px;
+    padding-left: 100px;
     opacity: 0.9;
 }
 
@@ -81,8 +81,8 @@
     align-items: flex-start;
     justify-content: center;
     flex: 1;
-    padding-left: 85px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 45px;
 }
 
 .heronav-hero-right h1 {
@@ -179,6 +179,17 @@
 .heronav-more-dropdown li:hover {
     color: grey;
     cursor: pointer;
+}
+
+.heronav-logos {
+    display: flex;
+    flex-direction: inline;
+    gap: 10px;
+}
+
+.heronav-logos img {
+    width: 30px;
+    height: 30px;
 }
 
 @keyframes burst {

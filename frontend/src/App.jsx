@@ -8,6 +8,7 @@ import ExtraCurrItem from "./Pages/Extracurriculars/ExtraCurrItem/ExtraCurrItem"
 import Projects from "./Pages/Projects/Projects";
 import ProjectItem from "./Pages/Projects/ProjectItem/ProjectItem";
 import PhotoGallery from "./Pages/PhotoGallery/PhotoGallery";
+import Footer from "./Sections/Footer/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </Route>
         <Route path="/photogallery" element={<PhotoGallery/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

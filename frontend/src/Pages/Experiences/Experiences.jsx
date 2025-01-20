@@ -8,8 +8,8 @@ const Experiences = () => {
             <div className="experiences-header">
                 <h1>Experiences</h1>
             </div>
-            {ExpEntries.map((item) => ( 
-                <div className="experience-entry">
+            {ExpEntries.map((item, index) => ( 
+                <div className="experience-entry" key={index}>
                     <h4>{item.name}</h4>
                     <div className="experience-entry-checkmore">
                         <h5>{item.timeframe}</h5>
