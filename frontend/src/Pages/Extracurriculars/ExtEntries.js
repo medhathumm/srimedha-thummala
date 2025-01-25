@@ -8,12 +8,12 @@ const ExtEntries = [
         description: "Interview and select speakers from 100+ applicants for yearly TEDxUofW conference.",
         images: [
         ],
-        context: "COMPANY",
+        context: "Student-run organization established to bring inspirational and informative TED style talks to the University of Washington.",
         responsibilities: "RESPONSIBILITIES",
         impact: "IMPACT",
         skills: "SKILLS",
         links: [
-            {name: "", url: ""}
+            {name: "Club Website", url: "https://tedxatuofw.com/"}
         ]
     },
     { 

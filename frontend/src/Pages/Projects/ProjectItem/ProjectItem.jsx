@@ -32,6 +32,7 @@ const ProjectItem = () => {
                             <div className="exp-main-left">
                                 <h2>{project.name}</h2>
                                 <h3>{project.more}</h3>
+                                <h5>{project.description}</h5>
                                 <p>{project.timeframe}</p>
                                 <p>{project.city}</p>
                             </div>
@@ -60,7 +61,7 @@ const ProjectItem = () => {
                             <div className="exp-info-section">
                                 <img src={role_symbol} alt=""/>
                                 <h2>Role</h2>
-                                <p>{project.responsibilities}</p>
+                                <p className="exp-info-section-list">{project.responsibilities}</p>
                             </div>
                             <div className="exp-info-section">
                                 <img src={impact_symbol} alt=""/>

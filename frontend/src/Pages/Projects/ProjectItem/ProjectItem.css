@@ -1,3 +1,7 @@
 .project-item {
     min-height: calc(100vh - 85px);
 }
+
+.exp-info-section-list {
+    list-style-type: none;
+}
