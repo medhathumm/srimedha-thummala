@@ -3,6 +3,7 @@ import profile_pic from "../Media/profilepic2.jpg";
 import resume_pdf from "../Media/Srimedha_Thummala copy.pdf";
 
 const AboutMe = () => {
+
     return (
         <section id="aboutme" className="about-me">
             <div className="aboutme-left">

@@ -1,26 +1,10 @@
 import './HeroNav.css';
-import { useState, useEffect } from 'react';
 import github_logo from "../Media/github_logo.png";
 import linkedin_logo from "../Media/linkedin_logo.png";
 import email_logo from "../Media/email_logo.png";
-import { Link } from "react-router-dom";
 import profile_pic from "../Media/profilepic3.png";
 
 const HeroNav = () => {
-
-    const [dropdownVisible, setDropdownVisible] = useState(true);
-
-    const handleLinkClick = () => {
-        setDropdownVisible(false); 
-    };
-
-    const handleMouseEnter = () => {
-        setDropdownVisible(true); 
-    };
-
-    const handleMouseLeave = () => {
-        setDropdownVisible(false); 
-    };
 
     // const BurstText = ({ text, className = "", fontSize = "2rem" }) => {
     //     return (
@@ -38,32 +22,9 @@ const HeroNav = () => {
     //         </div>
     //     );
     // };
-    useEffect(() => {
-        setDropdownVisible(false);
-    }, [])
 
     return (
         <section id="/" className="heronav-container">
-            <div className="heronav-nav">
-                <a href="/" style={{textDecoration: 'none', fontWeight: 500, fontSize: '25px'}}>Home</a>
-                <a href="#aboutme" style={{textDecoration: 'none', fontWeight: 500, fontSize: '25px'}}>About Me</a>
-                <div className="heronav-more" onMouseEnter={handleMouseEnter} 
-                    onMouseLeave={handleMouseLeave}>
-                     <a href="#more" style={{textDecoration: 'none', fontWeight: 500, fontSize: '25px'}}>More</a>
-                     { dropdownVisible ? (
-                        <ul className="heronav-more-dropdown">
-                            <li><a href="#skills" style={{textDecoration: 'none'}}>Skills</a></li>
-                            <li><Link to='/projects' onClick={handleLinkClick}>Projects</Link></li>
-                            <li><Link to='/experiences' onClick={handleLinkClick}>Experiences</Link></li>
-                            <li><Link to='/extracurriculars' onClick={handleLinkClick}>Extracurriculars</Link></li>
-                            <li><Link to='/photogallery' onClick={handleLinkClick}>Photo Gallery</Link></li>
-                            <li><a href="#testimonials" style={{textDecoration: 'none'}}>Testimonials</a></li>
-                        </ul>
-                    ) : <></>}
-                </div>
-                <a href="#contact" style={{textDecoration: 'none', fontWeight: 500, fontSize: '25px'}}>Contact Me</a>
-            </div>
-
             <div className="heronav-hero">
                 <div className="heronav-hero-left">
                     <img src={profile_pic} alt=""/>
@@ -78,7 +39,7 @@ const HeroNav = () => {
                     <div className="heronav-logos">
                         <a href="https://github.com/medhathumm" target="_blank" rel="noreferrer"><img src={github_logo} alt=""/></a>
                         <a href="https://www.linkedin.com/in/srimedha-thummala/" target="_blank" rel="noreferrer"><img src={linkedin_logo} alt=""/></a>
-                        <a href="#contact"><img src={email_logo} alt=""/></a>
+                        <a href="/#contact"><img src={email_logo} alt=""/></a>
                     </div>
                     <h6>Excited that you are here!</h6>
                     {/* <h6>Learn more about me and what skills I have to offer</h6> */}

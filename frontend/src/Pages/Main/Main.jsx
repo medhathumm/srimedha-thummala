@@ -7,6 +7,7 @@ import Testimonials from "../../Sections/Testimonials/Testimonials";
 import Contact from "../../Sections/Contact/Contact";
 
 const Main = () => {
+
     return (
         <div>
             <HeroNav/>

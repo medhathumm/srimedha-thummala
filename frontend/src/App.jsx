@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from "./Sections/Navbar/Navbar";
 import Main from "./Pages/Main/Main";
 import Experiences from "./Pages/Experiences/Experiences";
 import ExpItem from "./Pages/Experiences/ExpItem/ExpItem";
@@ -13,6 +14,7 @@ import Footer from "./Sections/Footer/Footer";
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Main/>}/>
         <Route path="/experiences" element={<Experiences/>}/>
