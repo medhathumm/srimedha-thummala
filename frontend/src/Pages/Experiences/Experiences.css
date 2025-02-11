@@ -38,9 +38,10 @@
     margin-left: 5%;
 }
 
-.experience-entry-checkmore h2 {
+.experience-entry-checkmore img {
     margin-right: 30px;
     margin-top: -40px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
     margin-left: 5%;
 }

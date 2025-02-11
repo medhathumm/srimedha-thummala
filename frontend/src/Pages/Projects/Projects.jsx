@@ -1,5 +1,6 @@
 import "./Projects.css";
 import ProjectEntries from "./ProjectEntries.js";
+import right_arrow from "../../Sections/Media/right-arrow.png";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -13,7 +14,7 @@ const Projects = () => {
                     <h4>{item.name}</h4>
                     <div className="project-entry-checkmore">
                         <h5>{item.timeframe}</h5>
-                        <Link to={`/project/${item.id}`} style={{ textDecoration: 'none' }} onClick={window.scrollTo(0,0)}><h2>&gt;</h2></Link>
+                        <Link to={`/project/${item.id}`} style={{ textDecoration: 'none', color: 'black'  }} onClick={window.scrollTo(0,0)}><img src={right_arrow} alt="" /></Link>
                     </div>
                     <p>{item.description}</p>
                     <hr/>

@@ -25,12 +25,12 @@ const Testimonials = () => {
                 <h6><strong>December 2024</strong></h6>
             </div>
 
-            <div className="testimonials-entry">
+            {/* <div className="testimonials-entry">
                 <p>"Testimonial"</p>
                 <h5> ~ <i>Name</i></h5>
                 <h6>Role</h6>
                 <h6><strong>Date</strong></h6>
-            </div>
+            </div> */}
         </section>
     )
 }

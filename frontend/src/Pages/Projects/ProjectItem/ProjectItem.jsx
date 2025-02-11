@@ -2,11 +2,11 @@ import "./ProjectItem.css";
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ProjectEntries from "../ProjectEntries.js";
-import impact_symbol from "../../../Sections/Media/target.png";
-import role_symbol from "../../../Sections/Media/list.png";
-import skills_symbol from "../../../Sections/Media/pencil.png";
-import link_symbol from "../../../Sections/Media/external-link.png";
-import context_symbol from "../../../Sections/Media/context.png";
+import impact_symbol from "../../../Sections/Media/impact.png";
+import role_symbol from "../../../Sections/Media/role.png";
+import skills_symbol from "../../../Sections/Media/skills.png";
+import link_symbol from "../../../Sections/Media/link.png";
+import context_symbol from "../../../Sections/Media/context2.png";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 const ProjectItem = () => {
@@ -78,10 +78,10 @@ const ProjectItem = () => {
                             {project.links ? 
                                 project.links.map((link, index) => {
                                     return (
-                                        <div key={index} className="exp-links-link">
-                                            <a href={link.url} style={{ textDecoration: 'none', color: 'black', fontSize: '18px', fontWeight: '500' }}><img src={link_symbol} alt=""/></a>
-                                            <a href={link.url} style={{ textDecoration: 'none', color: 'black', fontSize: '18px', fontWeight: '500' }}>{link.name}</a>
-                                        </div>
+                                        <a href={link.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black', fontSize: '18px', fontWeight: '500' }} className="exp-links-link">
+                                            <img src={link_symbol} alt=""/>
+                                            {link.name}
+                                        </a>
                                     )
                                 })
                             : <></>}

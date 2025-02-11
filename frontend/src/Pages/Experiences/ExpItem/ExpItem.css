@@ -8,7 +8,7 @@
     max-width: 100%;
     flex-direction: inline;
     align-items: center;
-    margin-top: 20px;
+    margin: 100px 0px;
     gap: 5%;
 }
 
@@ -45,6 +45,7 @@
     max-width: 80%;
     padding: 20px 0px;
     background: linear-gradient(90deg, rgba(60,168,147,1) 5%, rgba(60,205,178,1) 54%, rgba(183,247,235,1) 93%);
+    margin-bottom: 70px;
 }
 
 .exp-info-section {
@@ -92,22 +93,41 @@
     align-items: center;
 }
 
-.exp-links-link {
+.exp-links {
     display: flex;
     flex-direction: inline;
-    justify-content: start;
+    gap: 30px;
+    justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
+}
+
+.exp-links-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 100px;
+    margin-bottom: 10px; */
+    padding: 20px;
     gap: 10px;
+    background: rgba(183,247,235,0.705);
+    width: 200px;
+    height: 300px;
+}
+
+.exp-links-link:hover {
+    background: rgba(60,205,178,0.705);
 }
 
 .exp-links-link img {
     width: 25px;
     height: 25px;
+    margin-bottom: 20px;
 }
   
-.masonry-item {
+.exp-masonry-item {
     position: relative;
     overflow: hidden;
     border-radius: 7px; 
@@ -116,7 +136,7 @@
 }
   
   
-.masonry-image {
+.exp-masonry-image {
     width: 100%;
     height: 100%;
     object-fit: cover; 

@@ -1,6 +1,14 @@
 import uw_ta from "../../Sections/Media/uw-ta.jpg";
 import uw_dkdk from "../../Sections/Media/dkdk.png";
-import uw_dkdk2 from "../../Sections/Media/dkdk-2.png";
+import uw_dkdk3 from "../../Sections/Media/uw_dkdk3.png";
+import tech_pic1 from "../../Sections/Media/tech-pic1.jpeg";
+import tech_pic2 from "../../Sections/Media/tech-pic2.jpg";
+import tech_pic3 from "../../Sections/Media/tech-pic3.jpg";
+import tech_pic4 from "../../Sections/Media/tech-pic4.jpg";
+import dmw_pic1 from "../../Sections/Media/dmw-pic1.jpg";
+import dmw_pic2 from "../../Sections/Media/dmw-pic2.jpg";
+import dmw_pic3 from "../../Sections/Media/dmw-pic3.jpg";
+import dmw_pic4 from "../../Sections/Media/dmw-pic4.jpg";
 
 const ExpEntries = [
     { 
@@ -13,19 +21,42 @@ const ExpEntries = [
         images: [
             {src: uw_ta},
             {src: uw_dkdk},
-            {src: uw_dkdk2}
+            {src: uw_dkdk3},
         ],
-        context: "CSE 190b is a seminar for students who are direct admits to their computer science major. The seminar is 1.5 hours long for 1x per week and focuses on preparing students for life as a college student and computer science student at the Paul G. Allen School.",
-        responsibilities: "Present a Don't Know what you Don't Know (DKDK) segment focused on teaching a basic level introduction to core CSE topics, such as AI/ML, version control, cybersecurity, quantum computing, and more.",
-        impact: "Able to successfully ensure that 330+ students were comfortable with topics that they may have heard about but never understood or where confused about.",
+        context: <p>
+            CSE 190B is a seminar designed for direct-admit computer science students
+             to help them navigate their first year at UW. The course covers academic 
+             success strategies, career preparation, and core computing concepts, while 
+             also fostering community and inclusivity within the Allen School. The seminar 
+             runs for 10 weeks and 1.5 hours weekly, serving over 330 students each year.
+        </p>,
+        responsibilities: <ul>
+            <li>Led the "Don’t Know What You Don’t Know" (DKDK) segment, a weekly 5-10 minute presentation introducing fundamental CS topics such as:</li>
+            <ul>
+                <li style={{ textIndent: "30px" }}>Artificial Intelligence & Machine Learning</li>
+                <li style={{ textIndent: "30px" }}>Version Control (Git & GitHub)</li>
+                <li style={{ textIndent: "30px" }}>Cybersecurity & Ethical Hacking</li>
+                <li style={{ textIndent: "30px" }}>Quantum Computing </li>
+            </ul>
+            <li>Facilitated discussions & Q&A sessions to break down complex concepts into beginner-friendly explanations.</li>
+            <li>Mentored first-year students, offering academic and career advice to help them adjust to the rigorous CS curriculum.</li>
+        </ul>,
+        impact: <ul>
+            <li>Helped 330+ students build confidence in fundamental CS concepts they had previously found intimidating or confusing.</li>
+            <li>Created a welcoming and inclusive learning environment, making advanced topics more approachable.</li>
+            <li>Strengthened the direct-admit community by providing interactive and engaging learning experiences.</li>
+            <li>Encouraged student participation in hands-on discussions, improving their understanding of CS beyond the classroom.</li>
+        </ul>,
         skills: <ul>
-            <li>Presentation</li>
-            <li>Communication</li>
             <li>Public Speaking</li>
-            <li>Teaching/Instructing</li>
+            <li>Technical Communication</li>
+            <li>Teaching & Instruction</li>
+            <li>Mentorship</li>
         </ul>,
         links: [
-            {name: "UW CSE190B Course Website", url: "https://sites.google.com/cs.washington.edu/cse-190b-autumn-2024/home"}
+            {name: "UW CSE190B Course Website", url: "https://sites.google.com/cs.washington.edu/cse-190b-autumn-2024/home"},
+            {name: "Instructor: Prof. Dan Grossman", url: "https://homes.cs.washington.edu/~djg/"},
+            {name: "Teaching Assistant Program at UW CSE", url: "https://www.cs.washington.edu/academics/teaching-assistants/"}
         ]
     },
     { 
@@ -36,17 +67,35 @@ const ExpEntries = [
         city: "Snoqualmie, Washington",
         description: "Managed and reimaged 500+ student devices yearly and resolved over 15 monthly hardware support tickets to facilitate and enhance intradistrict technology functionality.",
         images: [
-            {src: uw_ta,}
+            {src: tech_pic1},
+            {src: tech_pic2},
+            {src: tech_pic3},
+            {src: tech_pic4}
         ],
-        context: "Snoqualmie Valley School District is based in Snoqualmie, Washington (approximately 30 miles east of Seattle) and is one of the largest school districts in the state, covering more than 400 square miles and serving the communities of Snoqualmie, North Bend, Fall City.",
-        responsibilities: "Re-Imaging Devices, Installing Computers and Printers, Asset Verification, Surplus",
-        impact: "Successfully re-imaged and prepared 1,500+ student laptops to handoff to incoming freshman and 500+ staff devices. Satisfied 30+ tickets related to classroom technology issues.",
+        context: <p>Snoqualmie Valley School District (SVSD) serves students in Snoqualmie, North Bend, and Fall City,
+             spanning over 400 square miles. As a Technology Intern, I worked alongside the district’s IT team to support
+             schools by maintaining and deploying essential technology infrastructure for students and staff.</p>,
+        responsibilities: <ul>
+            <li>Re-imaged and prepared student and staff devices for the upcoming academic year.</li>  
+            <li>Installed computers, printers, and other hardware across multiple schools.</li>
+            <li>Verified and updated asset records for accurate technology inventory tracking.</li>
+            <li>Assisted in processing surplus technology equipment for recycling or disposal.</li>
+            <li>Provided technical support for classroom technology, resolving IT support tickets.</li>
+        </ul>,
+        impact: <ul>
+            <li>Successfully re-imaged and prepared 1,500+ student laptops yearly for incoming freshmen and 500+ staff devices, ensuring a smooth start to the school year.</li>
+            <li>Resolved 30+ technology support tickets related to classroom devices yearly, improving technology accessibility for teachers and students.</li>
+        </ul>,
         skills: <ul>
-            <li>Installing and Updating Computer Software</li>
-            <li>Installing Computer Hardware</li>
+            <li>Installing and updating computer software & operating systems.</li>
+            <li>Setting up and configuring computer hardware, printers, and peripherals.</li>
+            <li>Asset management and tracking of IT equipment.</li>
+            <li>Troubleshooting and resolving common classroom technology issues.</li>
         </ul>,
         links: [
-            {name: "Tech Intern Website", url: "https://www.svsd410.org/departments/technology"}
+            {name: "SVSD Technology Department", url: "https://www.svsd410.org/departments/technology"},
+            {name: "One-to-One Laptop Initiative", url: "https://www.svsd410.org/departments/technology/one-to-one-laptop-initiative"},
+            {name: "Snoqualmie Valley School District Website", url: "https://www.svsd410.org/"}
         ] 
     },
     { 
@@ -57,13 +106,38 @@ const ExpEntries = [
         city: "Snoqualmie, Washington",
         description: "Guided groups of 20 - 30 students of varying age groups while developing eadership and teamwork skills through 10+ years of martial arts training.",
         images: [
-            {src: uw_ta,}
+            {src: dmw_pic1},
+            {src: dmw_pic2},
+            {src: dmw_pic3},
+            {src: dmw_pic4}
         ],
-        context: "COMPANY",
-        responsibilities: "RESPONSIBILITIES",
-        impact: "IMPACT",
-        skills: "SKILLS",
-        links: [] 
+        context: <p>DMW Martial Arts is a martial arts school located in Snoqualmie, Washington, offering challenging, 
+            disciplined, and enjoyable training for individuals aged 4 through adult. The dojo emphasizes self-defense, 
+            discipline, and fitness, providing programs tailored to various age groups and skill levels. As an instructor at DMW 
+            Martial Arts, I worked alongside a team of 10 other instructors, contributing to the personal and physical development
+            of numerous students. </p>,
+        responsibilities: <ul>
+            <li>Guided groups of 20-30 students, adapting teaching methods to accommodate diverse learning needs and age groups.</li>
+            <li>Provided one-on-one coaching to help students improve techniques and prepare for belt tests.</li>
+            <li>Assisted in curriculum development and structured lesson plans to ensure effective training progression.</li>
+            <li>Fostered a positive and disciplined learning environment in collaboration with 10 other instructors, ensuring effective communication and teamwork.</li>
+        </ul>,
+        impact: <ul>
+            <li>Successfully trained and mentored dozens of students, helping them achieve their next belt rank and develop self-confidence.</li>
+            <li>Strengthened students’ leadership skills by incorporating teamwork exercises and mentoring advanced students to assist beginners.</li>
+            <li>Contributed to the school’s reputation by maintaining high retention rates and ensuring a positive learning experience.</li>
+        </ul>,
+        skills: <ul>
+            <li>Instruction & Coaching</li>
+            <li>Public Speaking & Communication</li>
+            <li>Adaptability & Patience</li>
+            <li>Leadership & Teamwork</li>
+        </ul>,
+        links: [
+            {name: "DMW Martial Arts Official Website", url: "https://dmwmartialarts.com/"},
+            {name: "DMW Martial Arts Facebook Page", url: "https://www.facebook.com/DMWMartialArts/"},
+            {name: "DMW Martial Arts Instagram Page", url: "https://www.instagram.com/dmwmartialarts/"}
+        ] 
     },
 ];
 
