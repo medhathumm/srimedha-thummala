@@ -82,8 +82,8 @@ const ProjectEntries = [
         description: "Secured first place in Revere XR Hackathon with team Quantum SparkX for an AR prototype that preserves a historic event using innovative AR storytelling.",
         images: [
             {src: ep_pic1},
-            {src: ep_pic2},
-            {src: ep_pic3}
+            {src: ep_pic3},
+            {src: ep_pic2}
         ],
         context: <p>The Revere XR Hackathon challenged participants to preserve the rich history
              and culture of Seattle's Central District through immersive AR/VR technology. Teams 
