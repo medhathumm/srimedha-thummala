@@ -12,6 +12,7 @@ import photo9 from "../../Sections/Media/9-photogallery.jpeg";
 import photo10 from "../../Sections/Media/10-photogallery.jpeg";
 import photo11 from "../../Sections/Media/11-photogallery.jpeg";
 import photo12 from "../../Sections/Media/12-photogallery.jpeg";
+import element from "../../Sections/Media/element.png";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 const PhotoGallery = () => {
@@ -31,23 +32,27 @@ const PhotoGallery = () => {
       ]);
     
       return (
-            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3, 1200: 4}}>
-                <Masonry>
-                    {images.map((image, index) => (
-                        <div className="masonry-item">
-                            <img className="masonry-image"
-                                key={index}
-                                alt={image.alt}
-                                src={image.src}
-                                style={{display: "block", padding: "2px", height: "auto"}}
-                            />
-                            <div class="photo-description">
-                                <p>{image.description}</p>
+            <div>
+                <img src={element} style={{position: 'absolute', marginTop: '0px', bottom: 'auto', top: '0', left: '0', width: '85px', height: '85px'}} alt=""/>
+                <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3, 1200: 4}}>
+                    <Masonry>
+                        {images.map((image, index) => (
+                            <div className="masonry-item">
+                                <img className="masonry-image"
+                                    key={index}
+                                    alt={image.alt}
+                                    src={image.src}
+                                    style={{display: "block", padding: "2px", height: "auto"}}
+                                />
+                                <div class="photo-description">
+                                    <p>{image.description}</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </Masonry>
-            </ResponsiveMasonry>
+                        ))}
+                    </Masonry>
+                </ResponsiveMasonry>
+                <img src={element} style={{position: 'absolute', top: '0', marginTop: '0px', right: '0', width: '85px', height: '85px', transform: 'rotate(180deg)'}} alt=""/>
+            </div>
       );
     };
 

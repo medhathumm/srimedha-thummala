@@ -20,8 +20,8 @@ const ExpEntries = [
         description: "Lead presentations on core CSE concepts for 335 students in University of Washington's Paul G. Allen School of Computer Science & Engineering CSE 190B Direct-Admit Seminar.",
         images: [
             {src: uw_ta},
-            {src: uw_dkdk},
             {src: uw_dkdk3},
+            {src: uw_dkdk},
         ],
         context: <p>
             CSE 190B is a seminar designed for direct-admit computer science students
@@ -104,7 +104,7 @@ const ExpEntries = [
         more: "For DMW Martial Arts",
         timeframe: "December 2018 - September 2023",
         city: "Snoqualmie, Washington",
-        description: "Guided groups of 20 - 30 students of varying age groups while developing eadership and teamwork skills through 10+ years of martial arts training.",
+        description: "Guided groups of 20 - 30 students of varying age groups while developing leadership and teamwork skills through 10+ years of martial arts training.",
         images: [
             {src: dmw_pic1},
             {src: dmw_pic2},

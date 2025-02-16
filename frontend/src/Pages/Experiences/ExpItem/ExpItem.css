@@ -13,11 +13,9 @@
 }
 
 .exp-main-left {
-    padding-left: 100px;
+    padding-left: 150px;
     width: 45%;
-    /* margin-right: 500px; */
     padding-right: fit-content;
-    /* background: red; */
 }
 
 .exp-main-right {
@@ -29,9 +27,7 @@
     max-height: 70vh;
     overflow: hidden;
     padding: 20px;
-    padding-right: 100px;
-    /* margin-right: 0px; */
-    /* background:blue; */
+    padding-right: 150px;
 }
 
 .exp-info {
@@ -44,7 +40,7 @@
     margin: 40px 10%;
     max-width: 80%;
     padding: 20px 0px;
-    background: linear-gradient(90deg, rgba(60,168,147,1) 5%, rgba(60,205,178,1) 54%, rgba(183,247,235,1) 93%);
+    background: #046492;
     margin-bottom: 70px;
 }
 
@@ -55,10 +51,10 @@
     justify-content: start;
     align-items: center;
     text-align: start;
-    gap: 10px;
-    background-color: rgba(255, 255, 255, 0.705);
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .exp-info-section ul {
@@ -70,7 +66,7 @@
     padding: 0;
     margin: 0;
     align-items: start;
-    gap: 10px;
+    gap: 20px;
 }
 
 .exp-info-section img {
@@ -108,17 +104,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* margin-left: 100px;
-    margin-bottom: 10px; */
     padding: 20px;
     gap: 10px;
-    background: rgba(183,247,235,0.705);
+    background: #6ea8c4;
     width: 200px;
     height: 300px;
 }
 
 .exp-links-link:hover {
-    background: rgba(60,205,178,0.705);
+    background: rgba(4, 101, 146, 0.9);
 }
 
 .exp-links-link img {

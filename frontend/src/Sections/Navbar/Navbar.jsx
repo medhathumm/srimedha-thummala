@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
 

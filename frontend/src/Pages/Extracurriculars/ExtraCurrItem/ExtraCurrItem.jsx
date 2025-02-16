@@ -7,6 +7,7 @@ import role_symbol from "../../../Sections/Media/role.png";
 import skills_symbol from "../../../Sections/Media/skills.png";
 import link_symbol from "../../../Sections/Media/link.png";
 import context_symbol from "../../../Sections/Media/context2.png";
+import element from "../../../Sections/Media/element.png";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 const ExtraCurrItem = () => {
@@ -31,8 +32,9 @@ const ExtraCurrItem = () => {
                     <div className="extraCurr-item">
                         <div className="exp-main">
                             <div className="exp-main-left">
-                                <h2>{extraCurr.name}</h2>
-                                <h3>{extraCurr.more}</h3>
+                                <img src={element} style={{position: 'absolute', marginTop: '0px', bottom: 'auto', top: '0', left: '0', width: '85px', height: '85px'}} alt=""/><img src={element} style={{position: 'absolute', marginTop: '0px', bottom: 'auto', top: '0', left: '0', width: '85px', height: '85px'}} alt=""/>
+                                <h1>{extraCurr.name}</h1>
+                                <h2>{extraCurr.more}</h2>
                                 <p>{extraCurr.timeframe}</p>
                                 <p>{extraCurr.city}</p>
                             </div>
@@ -50,6 +52,7 @@ const ExtraCurrItem = () => {
                                         ))}
                                     </Masonry>
                                 </ResponsiveMasonry>
+                                <img src={element} style={{position: 'absolute', top: '0', marginTop: '0px', right: '0', width: '100px', height: '100px', transform: 'rotate(180deg)'}} alt=""/>
                             </div>
                         </div>
                         <div className="exp-info">
@@ -70,7 +73,7 @@ const ExtraCurrItem = () => {
                             </div>
                             <div className="exp-info-section">
                                 <img src={skills_symbol} alt=""/>
-                                <h2>Acquired</h2>
+                                <h2>Skills</h2>
                                 <p>{extraCurr.skills}</p>
                             </div>
                         </div>

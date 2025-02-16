@@ -34,13 +34,15 @@
 }
 
 .aboutme-resume-btn button {
-    background-color: #b7f7eb;
+    background-color: #046492;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 2px 2px 3px -2px black;
     width: 100px;
+    color: white;
+    cursor: pointer;
 }
 
 .aboutme-resume-btn button:hover {
-    background-color: #a6f0e3;
+    background-color: #31789a;
 }

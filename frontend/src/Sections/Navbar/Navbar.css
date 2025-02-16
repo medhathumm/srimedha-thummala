@@ -5,13 +5,13 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 30px;
     padding: 0; 
     margin: 0;
     height: 10vh;
-    background: linear-gradient(90deg, rgba(31,91,79,1) 5%, rgba(60,205,178,1) 38%, rgba(177,225,216,1) 93%);
+    background: #046492;/* linear-gradient(90deg, rgba(31,91,79,1) 5%, rgba(60,205,178,1) 38%, rgba(177,225,216,1) 93%); */
 }
 
 .heronav-nav a, .heronav-nav Link {
@@ -26,7 +26,7 @@
 .heronav-nav a::after, .heronav-nav Link::after {
     content: '';
     color: #fff;
-    background:rgba(247, 221, 221, 0.705);
+    background:white;
     bottom: 0;
     width: 0;
     height: 3px;
@@ -64,32 +64,9 @@
     padding: 10px;
 }
 
-/* .heronav-more-dropdown {
-    display: flex;
-    flex-direction: column;
-    min-height: fit-content;
-    width: fit-content;
-    position: absolute;
-    background-color: white;
-    justify-content: center;
-    gap: 0px;
-    font-size: 18px;
-    top: 50%;
-    left: 0;
-    padding: 0px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-} */
-
 .heronav-more a {
     display: inline-block;
-    /* padding: 10px 20px; */
 }
-
-/* .heronav-more:hover > a,
-.heronav-more:focus-within > a {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.705);
-} */
 
 .heronav-more-dropdown li {
     display: flex;
@@ -106,10 +83,19 @@
     color: black;
     display: block;
     padding: 10px;
-    cursor: pointer;
 }
 
-.heronav-more-dropdown li:hover {
-    color: grey;
-    cursor: pointer;
+.heronav-more-dropdown li a::after {
+    content: '';
+    background: lightgrey; 
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    transition: 0.25s;
+}
+
+.heronav-more-dropdown li a:hover::after {
+    width: 100%;
 }

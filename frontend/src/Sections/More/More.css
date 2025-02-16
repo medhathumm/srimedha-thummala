@@ -1,7 +1,8 @@
 .more {
     width: 80%;
     margin: 5% 10%;
-    background: linear-gradient(90deg, rgba(60,168,147,1) 5%, rgba(60,205,178,1) 54%, rgba(183,247,235,1) 93%);
+    /* background: linear-gradient(90deg, rgba(60,168,147,1) 5%, rgba(60,205,178,1) 54%, rgba(183,247,235,1) 93%); */
+    background: #046492;
     padding: 30px;
 }
 
@@ -22,7 +23,7 @@
 
 .more-section {
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.705);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
 }
 

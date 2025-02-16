@@ -89,7 +89,7 @@ const ExtEntries = [
         more: <p>For CRYUW <br/> @ the University of Washington</p>, 
         timeframe: "November 2024 - Present",
         city: "Seattle, Washington",
-        description: "Organizing 3+ impactful fundraisers to raise $500+ to support CRY America’s initiatives as part of Child Rights & YOu at UW (CRYUW).",
+        description: "Organizing 3+ impactful fundraisers to raise $500+ to support CRY America’s initiatives as part of Child Rights & You at UW (CRYUW).",
         images: [
             {src: cry_pic1},
             {src: cry_pic2},
