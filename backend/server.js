@@ -9,9 +9,12 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
-app.use(cors({
-    origin: 'https://srimedha.vercel.app', 
-  }));
+const corsOptions = {
+    origin: process.env.NODE_ENV === 'production' 
+        ? 'https://srimedha.vercel.app' 
+        : 'http://localhost:3000',
+};
+app.use(cors(corsOptions));
 app.use("/api/sendemail/", emailRouter);
 
 app.get('/', (req, res) => {
