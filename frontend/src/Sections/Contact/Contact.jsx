@@ -22,7 +22,7 @@ const Contact = () => {
 
         // console.log([...formData.entries()]);
 
-        const response = await axios.post("https://backend-sigma-fawn-36.vercel.app/api/sendemail/inquiryEmail", formData
+        const response = await axios.post("https://backend-sigma-fawn-36.vercel.app/api/sendemail/inquiryEmail", formData 
         //     , 
         //     {
         //     headers: {
