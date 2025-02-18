@@ -9,8 +9,11 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+
+const cors = require('cors');
 app.use(cors({
     origin: 'https://srimedha-thummala.vercel.app',
+    methods: ['GET', 'POST'],
 }));
 app.use("/api/sendemail/", emailRouter);
 
@@ -25,3 +28,5 @@ app.listen(PORT, (error) => {
         console.log("Error: " + error);
     }
 });
+
+export default app;

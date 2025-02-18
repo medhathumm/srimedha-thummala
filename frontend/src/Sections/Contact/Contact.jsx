@@ -20,13 +20,16 @@ const Contact = () => {
         formData.append('email', email);
         formData.append('description', message);
 
-        console.log([...formData.entries()]);
+        // console.log([...formData.entries()]);
 
-        const response = await axios.post("http://localhost:3000/api/sendemail/inquiryEmail", formData, {
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
+        const response = await axios.post("http://localhost:3000/api/sendemail/inquiryEmail", formData
+        //     , 
+        //     {
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        // }
+        );
         if (response.data.success) {
             setName("")
             setMessage("");
