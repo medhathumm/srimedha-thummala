@@ -10,28 +10,9 @@ const PORT = 4000;
 
 app.use(express.json());
 
-// app.use(cors({
-//     origin: 'https://srimedha-thummala.vercel.app'
-// }));
-
-const allowedOrigins = [
-    'http://localhost:3001',  // Local development
-    'https://srimedha-thummala.vercel.app',  // Deployed frontend URL  // Another domain
-  ];
-  
-  const corsOptions = {
-    origin: (origin, callback) => {
-      if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-        // Allow requests from allowed origins or when there's no origin (e.g., testing or server-side requests)
-        callback(null, true);
-      } else {
-        // Reject requests from other origins
-        callback(new Error('Not allowed by CORS'));
-      }
-    }
-  };
-  
-  app.use(cors(corsOptions));
+app.use(cors({
+    origin: 'https://srimedha-thummala.vercel.app'
+}));
 
 app.use("/api/sendemail/", emailRouter);
 
