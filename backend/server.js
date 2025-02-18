@@ -10,6 +10,7 @@ const PORT = 4000;
 
 app.use(express.json());
 
+
 app.use(cors({
     origin: 'https://srimedha-thummala.vercel.app'
 }));
