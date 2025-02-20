@@ -34,7 +34,7 @@ const HeroNav = () => {
                 <div className="heronav-hero-right">
                     <h4>Hi! I am</h4>
                     <h1>Srimedha Thummala</h1>
-                    <h2>Aspiring Software Engineer & Program Manager</h2>
+                    <h2>Aspiring Software Engineer</h2>
                     {/* <h6>Detail-oriented and passionate Computer Science student with skills in software engineering, generative AI, and design. 
                         Seeking an entry-level software engineering role to apply my technical abilities on innovative and impactful projects.
                     </h6> */}
