@@ -11,9 +11,17 @@ const app = express();
 app.use(express.json());
 
 
+// app.use(cors({
+//     origin: 'https://srimedha-thummala.vercel.app'
+// }));
+
 app.use(cors({
-    origin: 'https://srimedha-thummala.vercel.app'
-}));
+    origin: "https://srimedha-thummala.vercel.app",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  }));
+
+  app.options("*", cors());
 
 app.use("/api/sendemail/", emailRouter);
 
