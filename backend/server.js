@@ -23,7 +23,7 @@ app.use(cors({
 
   app.options("*", cors());
 
-app.use("/api/sendemail/", emailRouter);
+app.use("/sendemail/", emailRouter);
 
 app.get('/', (req, res) => {
     res.send('API is running...');
