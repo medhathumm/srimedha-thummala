@@ -13,16 +13,20 @@ const Contact = () => {
     const Submit_Inquiry = async (e) => {
         e.preventDefault();
     
-        const formData = new FormData();
+        // const formData = new FormData();
 
-        // Append other product details (not files)
-        formData.append('name', name);
-        formData.append('email', email);
-        formData.append('description', message);
+        // // Append other product details (not files)
+        // formData.append('name', name);
+        // formData.append('email', email);
+        // formData.append('description', message);
+        const data = { name, email, description: message };
 
         // console.log([...formData.entries()]);
 
-        const response = await axios.post("https://backend-sigma-fawn-36.vercel.app/api/sendemail/inquiryEmail", formData 
+        const response = await axios.post("https://backend-sigma-fawn-36.vercel.app/api/sendemail/inquiryEmail", 
+            //formData 
+            data,
+      { headers: { "Content-Type": "application/json" } }
         //     , 
         //     {
         //     headers: {
