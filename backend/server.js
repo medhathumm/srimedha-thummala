@@ -19,11 +19,11 @@ app.use(cors({
     origin: "https://srimedha-thummala.vercel.app",
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
-  }));
+}));
 
-  app.options("*", cors());
+app.options("*", cors());
 
-app.use("/sendemail/", emailRouter);
+app.use("/sendemail", emailRouter);
 
 app.get('/', (req, res) => {
     res.send('API is running...');

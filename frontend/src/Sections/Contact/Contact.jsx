@@ -23,7 +23,7 @@ const Contact = () => {
 
         // console.log([...formData.entries()]);
 
-        const response = await axios.post("https://backend-sigma-fawn-36.vercel.app/api/sendemail/inquiryEmail", 
+        const response = await axios.post("https://backend-sigma-fawn-36.vercel.app/sendemail/inquiryEmail", 
             //formData 
             data,
       { headers: { "Content-Type": "application/json" } }
